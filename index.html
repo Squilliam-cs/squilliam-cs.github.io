@@ -1,9 +1,68 @@
-<html>
- 
-<body>
-  <h1>Hey I'm Squill</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Selectors & Specificity</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>CSS Selectors & Specificity</h1>
+      <h2>CSS Selectors</h2>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 150px;">Selector</th>
+            <th style="width: 450px">Description</th>
+            <th style="width: 450px;">Specificity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">* {}</td>
+            <td>Applies CSS styles to all elements in a document unless otherwise specified.</td>
+            <td>Least specific. Can be overridden by element, class or id selectors.</td>
+          </tr>
+          <tr>
+            <td class="code">element {}</td>
+            <td>Applies styles to all elements with the selected tag.</td>
+            <td>Second least specific, can be overridden by id or class selectors.</td>
+          </tr>
+          <tr>
+            <td class="code">.classname {}</td>
+            <td>Applies styles to all elements with the selected class name</td>
+            <td>More specific than element selectors. Can be overridden by id selectors.</td>
+          </tr>
+          <tr>
+            <td class="code">#id {}</td>
+            <td>Selects an element with corresponding ID and applies styles</td>
+            <td>Second most specific. Overrides class, element and universal styles.</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Uses Specificity without a Selector</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 150px;">Attribute</th>
+            <th style="width: 450px;">Description</th>
+            <th style="width: 450px;">Specificity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Inline Styles</td>
+            <td>Used to write CSS code in a html document. Applies styles to the element in which it is written.</td>
+            <td>Usually most specific. Overrides all selectors unless '!important' is used.</td>
+          </tr>
+          <tr>
+            <td class="code">!important</td>
+            <td>Overrides all other CSS rules. Should only be used if a more specific selector cannot be used.</td>
+            <td>Most specific. Forces the selected CSS rule to always apply regardless of specificity.</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
 </html>

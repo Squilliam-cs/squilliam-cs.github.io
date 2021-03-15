@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: azure;
+}
+
+header {
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 26px;
+  color: firebrick;
+}
+
+table {
+  margin: 35px auto;
+  border: 2px solid red;
+  width: 1000px;
+  font-size: 18px;
+}
+
+th {
+  background-color: red;
+}
+
+td {
+  border-top: 1px solid red;
+}
+.code {
+  font-family: monospace;
+  background-color: gainsboro;
+}
